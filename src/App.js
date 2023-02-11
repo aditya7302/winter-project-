@@ -1,23 +1,59 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import Booking from "./pages/Booking";
+import Landing from "./pages/Landing";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Contact from "./components/main/contact_us/Contact";
+import Bookingfinal from "./pages/Bookingfinal";
+import Signup from "./pages/Signup";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>winter</code> project.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Landing />
+              </div>
+            }
+          />
+
+          <Route
+            path="/login"
+            element={
+              <div>
+                <Login />
+              </div>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <div>
+                <Contact />
+              </div>
+            }
+          />
+          <Route
+            path="/booking/location"
+            element={
+              <div>
+                <Bookingfinal />
+              </div>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <div>
+                <Signup />
+              </div>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
