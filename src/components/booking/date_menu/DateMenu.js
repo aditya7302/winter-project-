@@ -34,6 +34,7 @@ const DateMenu = () => {
           placeholder="where are you going"
           className="headersearchinput"
           onChange={(e) => setdestination(e.target.value)}
+          required
         />
       </div>
 
@@ -84,7 +85,7 @@ const DateMenu = () => {
       </div>
       <div className="datemenu_searchButton">
         <button onClick={handleSearch}>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
     </section>

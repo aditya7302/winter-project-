@@ -17,10 +17,8 @@ const Bookingfinal = () => {
     console.log(prop);
   }
 
-  // const [destination, setdestination] = useState(location.state.destination);
-  // const [date, setdate] = useState(location.state.date);
-  // const [Duration, setDuration] = useState(location.state.Duration);
-
+  const [destination, setdestination] = useState(prop.state.destination);
+  const [Duration, setDuration] = useState(prop.state.Duration); ///neeed to add the value for search in usestate
   const [openDate, setopenDate] = useState(false);
   const [date, setDate] = useState([
     ///neeed to add the value for search in usestate
@@ -31,10 +29,11 @@ const Bookingfinal = () => {
     },
   ]);
 
-  const [Duration, setDuration] = useState(prop.state.Duration); ///neeed to add the value for search in usestate
   const navigate = useNavigate();
   const handleSearch = () => {
-    navigate("/booking/location");
+    navigate("/booking/location", {
+      state: { destination, date, Duration },
+    });
   };
 
   return (
@@ -47,7 +46,6 @@ const Bookingfinal = () => {
             type="text"
             placeholder={prop.state.destination}
             className="headersearchinput"
-            // value={prop.state.destination}
           />
         </div>
 
@@ -98,7 +96,7 @@ const Bookingfinal = () => {
         </div>
         <div className="datemenu_searchButton">
           <button onClick={handleSearch}>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </section>

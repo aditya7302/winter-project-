@@ -2,18 +2,20 @@
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  color: rgb(0, 0, 0);
-  background-color: rgb(222, 222, 222);
+  border-radius: 5px;
+  background: rgb(29, 29, 30);
   margin: 1rem 1rem 1rem 1rem;
-
+  color: rgb(206, 206, 206);
   transition: 0.3s;
-  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-bottom: 2px solid var(--colortheme);
 }
 
 .locationcard:hover {
-  background-color: var(--colortheme);
   color: white;
   border-radius: 10px;
+  border: 2px solid var(--colortheme);
 
   /* border: 2px solid rgb(0, 0, 0); */
 }
@@ -23,4 +25,18 @@
 .location_card_info {
   display: flex;
   flex-direction: column;
+}
+.locationcard_menu {
+  text-transform: capitalize;
+  background-color: rgb(39, 39, 39);
+  margin: 1rem 1rem;
+  padding: 00.1em 0;
+  border-radius: 5px;
+}
+.locationcard_menu i {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+.locationcard_menu > div {
+  margin: 1rem;
 }

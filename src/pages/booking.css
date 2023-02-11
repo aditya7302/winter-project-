@@ -1,10 +1,14 @@
 .booking_page {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.714)),
+  /* background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.52),
+      rgba(255, 255, 255, 0.324)
+    ),
     url(https://img.freepik.com/free-photo/happy-elegant-woman-sitting-car-with-fastened-seatbelt-driving-work-female-driver-smiling-camera-looking-out-window_197531-30470.jpg?w=1060&t=st=1676125030~exp=1676125630~hmac=b524b29c5cea34856c5d6dcfa1a6ac85195cd5ffaea0bc6fa356fda3db85405f);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: top; */
   display: flex;
   flex-direction: column;
 }

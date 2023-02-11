@@ -1,22 +1,31 @@
 .datemenu_flex {
   display: flex;
   /* justify-content: space-between; */
-  background-color: rgba(255, 255, 255, 0.827);
-  padding: 0.6rem 0.6rem;
+  background-color: rgba(16, 16, 16, 0.332);
+  padding: 1rem 1rem;
   /* margin-bottom: 1rem; */
-  box-shadow: 0 0 1000px black;
+  /* box-shadow: 0 0 10px rgb(0, 0, 0); */
   gap: 1rem;
+  border-radius: 5px;
+
   align-items: center;
+  color: white;
 }
 .datemenu_flex .headersearchinput {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   border: none;
+
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
 
   font-size: 1.1rem;
   height: 3rem;
   text-transform: capitalize;
-  background-color: rgba(0, 0, 0, 0.119);
+  color: white;
+}
+::placeholder {
+  color: white;
 }
 .datemenu_place {
   flex: 1;
@@ -25,6 +34,7 @@
   /* width: 6rem; */
   background-color: var(--colortheme);
   /* background-color: black; */
+  border-radius: 10px;
 
   border: none;
 
@@ -49,8 +59,10 @@
 }
 .datemenu_date {
   flex: 1;
-  background-color: rgba(0, 0, 0, 0.119);
+  background-color: rgba(0, 0, 0, 0.6);
+
   padding: 0.5rem;
+  border-radius: 5px;
 
   /* text-transform: capitalize; */
   height: 3rem;
@@ -70,7 +82,8 @@
   align-items: center;
   flex: 1;
   padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.119);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
 
   text-transform: capitalize;
   height: 3rem;
@@ -85,6 +98,7 @@
 }
 .datemenu_duration button {
   background-color: transparent;
+  color: white;
   border: none;
   margin: 0 0.5rem;
   font-size: 1rem;
